@@ -1,0 +1,345 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,300;1,300;1,400;1,600&display=swap");
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  width: 100%;
+  font-family: "Montserrat", sans-serif;
+}
+
+header {
+  background-color: #bbbbbb;
+  padding: 20px 0;
+}
+
+.caja {
+  max-width: 940px;
+  position: relative;
+  margin: 0 auto;
+}
+
+nav {
+  position: absolute;
+  top: 110px;
+  right: 0;
+}
+
+nav li {
+  display: inline;
+  margin: 0 0 0 15px;
+}
+
+nav a {
+  text-transform: uppercase;
+  color: #000000;
+  font-weight: bold;
+  font-size: 22px;
+  text-decoration: none;
+}
+
+nav a:hover {
+  color: #c78c19;
+  text-decoration: underline;
+}
+
+.productos {
+  max-width: 940px;
+  margin: 0 auto;
+  padding: 50px;
+}
+
+.productos li {
+  display: inline-block;
+  text-align: center;
+  width: 30%;
+  height: 400px;
+  vertical-align: top;
+  margin: 0 1.5%;
+  padding: 30px 20px;
+  box-sizing: border-box;
+  border: 2px solid #000000;
+  border-radius: 10px;
+  transition: ease-in-out 0.5s all;
+  box-shadow: 3px 3px 10px 2px #000000;
+}
+
+.productos li:hover {
+  transform: scale(0.9);
+  border-color: #c78c19;
+}
+
+.productos li:hover h2 {
+  font-size: 33px;
+}
+
+.productos h2 {
+  font-size: 30px;
+  font-weight: bold;
+}
+
+.productos img {
+  width: 100%;
+}
+
+.producto-descripcion {
+  font-size: 18px;
+}
+
+.producto-precio {
+  font-size: 20px;
+  font-weight: bold;
+  margin-top: 10px;
+}
+
+footer {
+  text-align: center;
+  background: url(imagenes/bg.jpg);
+  padding: 40px;
+}
+
+.copyright {
+  color: #ffffff;
+  font-size: 13px;
+  margin: 20px;
+}
+
+.contacto {
+  width: 940px;
+  margin: 0 auto;
+  padding-block: 3em 0;
+}
+
+form {
+  margin: 40px 0;
+}
+
+form label,
+form legend {
+  display: block;
+  font-size: 20px;
+  margin: 0 0 10px;
+}
+
+.input-padron {
+  display: block;
+  margin: 0 0 20px;
+  padding: 10px 25px;
+  width: 50%;
+}
+
+.checkbox {
+  margin: 20px 0;
+}
+
+.enviar {
+  width: 40%;
+  padding: 15px 0;
+  font-size: 18px;
+  font-weight: bold;
+  color: white;
+  background: orange;
+  border: none;
+  border-radius: 5px;
+  transition: all ease-in-out 0.5s;
+  cursor: pointer;
+}
+
+.enviar:hover {
+  background: darkorange;
+}
+
+.enviar:active {
+  transform: scale(0.9);
+}
+
+main .table {
+  margin: 40px 40px;
+}
+
+main table thead {
+  color: white;
+  border: 1px solid #5f4002;
+  font-weight: bold;
+}
+
+main table tbody td,
+th {
+  border: 1px solid #5f4002;
+  padding: 8px 15px;
+  font-weight: bold;
+  background: #c78c19;
+  color: white;
+}
+
+/* css home */
+.banner {
+  width: 100%;
+  object-fit: fill;
+}
+
+/* selectores avanzados */
+/* 
+img + p {
+  background: yellow;
+}
+
+img ~ p {
+  background: yellow;
+} */
+/* 
+.principal p:not(#mision){
+background: orange;
+} */
+
+.principal {
+  background: #fefefe;
+  padding: 3em 0;
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.titulo-principal {
+  text-align: center;
+  font-size: 2em;
+  margin: 0 0 1em;
+  clear: left;
+}
+
+.titulo-principal::first-letter {
+  font-weight: bold;
+}
+
+.principal p {
+  margin: 0 0 1em;
+}
+
+.principal strong {
+  font-weight: bold;
+}
+
+.principal em {
+  font-style: italic;
+}
+
+.mapa {
+  padding: 3em 0;
+  background: linear-gradient(#fefefe, #888888);
+}
+
+.mapa > iframe {
+  max-width: 100%;
+}
+
+.mapa p {
+  margin: 0 0 2em;
+  text-align: center;
+}
+
+.mapa-contenido {
+  max-width: 940px;
+  margin: 0 auto;
+}
+
+.diferenciales {
+  padding: 3em 0;
+  background: #888;
+}
+
+.contenido-diferenciales {
+  width: 840px;
+  margin: 3em auto;
+}
+
+.lista-diferenciales {
+  width: 40%;
+  display: inline-block;
+  vertical-align: top;
+}
+
+.imagenDiferencial {
+  width: 60%;
+  transition: all ease-in-out 2s;
+  box-shadow: 10px 10px 20px 15px #000000;
+}
+
+.imagenDiferencial:hover {
+  opacity: 0.5;
+}
+
+.items {
+  line-height: 2em;
+}
+
+.items::before {
+  content: "⚝";
+}
+
+.items:nth-child(1) {
+  font-weight: bold;
+}
+
+.utensilios {
+  width: 120px;
+  float: left;
+  margin: 0 20px 20px 0;
+}
+
+.video {
+  display: flex;
+  flex-direction: row;
+  max-width: 1060px;
+  margin: 1em auto;
+}
+
+.video iframe {
+  padding-inline: 5px;
+}
+
+@media screen and (max-width: 912px) {
+  h1 {
+    text-align: center;
+  }
+
+  nav {
+    position: static;
+    text-align: center;
+  }
+
+  nav li a {
+    font-size: 14px;
+  }
+
+  .caja,
+  .principal,
+  .mapa-contenido,
+  .contenido-diferenciales,.contacto {
+    width: auto;
+    padding: 1rem;
+  }
+  .video {
+    width: auto;
+    flex-direction: column;
+  }
+
+  .video > iframe {
+    padding: 0.5em 0;
+  }
+
+  .productos li {
+    width: 45%;
+    margin-block: 1em;
+    padding-block: 1em;
+  }
+}
+
+@media screen and (max-width: 440px) {
+  .productos li {
+    width: 100%;
+    margin-block: 5px;
+    padding-block: 1em;
+  }
+}
